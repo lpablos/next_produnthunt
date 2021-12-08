@@ -1,14 +1,12 @@
 import React from 'react'
 import Link from 'next/link'
+// Importacion de componente
+import Header from './Header'
 
 const Layout = props => {
     return (
         <>
-            <h1>Header Dinamico</h1>
-            <nav>
-                <Link href="/">Inicio</Link>
-                <Link href="/nosotros">Nosotos</Link>
-            </nav>
+            <Header />
             <main>
                 {props.children}
             </main>
